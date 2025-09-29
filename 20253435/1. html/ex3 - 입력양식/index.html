@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>로그인 폼</title>
+    <style>
+        input[type="text"]{
+            background-color: red;
+        }
+        input[type="password"]{
+            background-color: blue;
+        }
+        #header > h1{
+            color : red;
+        }
+        #section > h1{
+            color : orange;
+        }
+        h1:hover{
+            color: blue;
+        }
+        h1:active{
+            color: green;
+        }
+        input:enabled{
+            background-color: white;
+        }
+        input:disabled{
+            background-color: red;
+        }
+        input:focus{
+            background-color: orange;
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+    <h1>로그인 폼</h1>
+    <hr>
+    <form method="get">
+        <input type="text" value="" name="search" autofocus required></input><br>
+        <input type="password" value=""></input><br>
+        <input type="submit" value="완료"></input>
+    </form>
+    <hr>
+    <form>
+    <input type="text" name="text" value="text"><br>
+    <input type="password" name="password" value="password"><br>
+    <input type="file" name="file" value="file"><br>
+    <input type="checkbox" name="checkbox" value="checkbox"><br>
+    <input type="radio" name="radio" value="radio"><br>
+    
+    <input type="hidden" name="hidden" value="hidden"><br>
+
+    <input type="button" value="button"><br>
+    <input type="reset" value="reset"><br>
+    <input type="submit" value="submit"><br>
+    <input type="image" src="/ex1/shy0929.jpg"><br>
+    </form>
+    <form>
+        <label for="naem">이름</label>
+        <input id="name" type="text">
+    </form>
+    <label for="man">남성</label>
+    <input id="man" type="radio" name="gender" value="man">
+    <label for="woman">여성</label>
+    <input id="woman" type="radio" name="gender" value="woman">
+</body>
+</html>
